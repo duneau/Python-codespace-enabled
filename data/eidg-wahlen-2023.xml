@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcat="http://www.w3.org/ns/dcat#"
+  xmlns:dct="http://purl.org/dc/terms/"
+  xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+>
+  <dcat:Dataset rdf:about="https://ckan.opendata.swiss/dataset/02ff9cf6-702d-44fd-9539-0a1ac1582d4c">
+    <dct:title xml:lang="de">Eidgenössische Wahlen 2023</dct:title>
+    <dcat:keyword xml:lang="fr">part-de-suffrages</dcat:keyword>
+    <dcat:keyword xml:lang="de">stimmenzahl</dcat:keyword>
+    <dcat:keyword xml:lang="fr">suffrages</dcat:keyword>
+    <dcat:keyword xml:lang="fr">elections</dcat:keyword>
+    <dcat:keyword xml:lang="fr">proportion-de-femmes</dcat:keyword>
+    <dcat:keyword xml:lang="de">mandatsverteilung</dcat:keyword>
+    <dcat:keyword xml:lang="de">listenverbindung</dcat:keyword>
+    <dcat:keyword xml:lang="it">eletti</dcat:keyword>
+    <dcat:keyword xml:lang="fr">sieges</dcat:keyword>
+    <dcat:keyword xml:lang="fr">elus</dcat:keyword>
+    <dcat:keyword xml:lang="it">forze-partitiche</dcat:keyword>
+    <dcat:contactPoint>
+      <vcard:Organization rdf:nodeID="Nf285810ed51b4464b8642d8bb78a84ef">
+        <vcard:hasEmail rdf:resource="mailto:poku@bfs.admin.ch"/>
+        <vcard:fn>Bundesamt für Statistik</vcard:fn>
+      </vcard:Organization>
+    </dcat:contactPoint>
+    <dcat:keyword xml:lang="de">fiktive-waehlende</dcat:keyword>
+    <dct:publisher>
+      <foaf:Organization rdf:about="https://opendata.swiss/organization/bundesamt-fur-statistik-bfs">
+        <foaf:name>Bundesamt für Statistik BFS, Office fédéral de la statistique OFS, Ufficio federale di statistica UST</foaf:name>
+      </foaf:Organization>
+    </dct:publisher>
+    <dcat:keyword xml:lang="fr">force-des-partis</dcat:keyword>
+    <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/OTHER"/>
+    <dct:title xml:lang="fr">Elections fédérales 2023</dct:title>
+    <dcat:keyword xml:lang="fr">participation</dcat:keyword>
+    <dcat:keyword xml:lang="it">elezioni-2023</dcat:keyword>
+    <dcat:keyword xml:lang="fr">elections-2023</dcat:keyword>
+    <dcat:keyword xml:lang="de">wahllisten</dcat:keyword>
+    <dcat:keyword xml:lang="fr">resultats-cantonaux</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-08T00:00:00</dct:issued>
+    <dcat:keyword xml:lang="de">mandate</dcat:keyword>
+    <dcat:keyword xml:lang="de">gemeindeergebnisse</dcat:keyword>
+    <dcat:keyword xml:lang="de">sitzverteilung</dcat:keyword>
+    <dcat:keyword xml:lang="it">partecipazione-elettorale</dcat:keyword>
+    <dcat:keyword xml:lang="de">parteistaerken</dcat:keyword>
+    <dcat:keyword xml:lang="it">seggi</dcat:keyword>
+    <dcat:keyword xml:lang="it">forze-liste-elettorali</dcat:keyword>
+    <dcat:keyword xml:lang="it">candidati</dcat:keyword>
+    <dcat:keyword xml:lang="fr">candidats</dcat:keyword>
+    <dcat:keyword xml:lang="it">elezioni-consiglio-nazionale</dcat:keyword>
+    <dcat:keyword xml:lang="fr">resultats-communaux</dcat:keyword>
+    <dcat:keyword xml:lang="it">assegnazione-mandati</dcat:keyword>
+    <dcat:keyword xml:lang="fr">listes-electorales</dcat:keyword>
+    <dcat:keyword xml:lang="fr">repartition-des-sieges</dcat:keyword>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-03T00:00:00</dct:modified>
+    <dcat:keyword xml:lang="de">gewaehlte</dcat:keyword>
+    <dcat:keyword xml:lang="de">sitze</dcat:keyword>
+    <dct:description xml:lang="it">Web service per i risultati delle elezioni federali del 22 ottobre 2023 (Consiglio nazionale e Consiglio degli Stati). La domenica delle elezioni l’Ufficio federale di statistica pubblicherà ininterrottamente i risultati provvisori ufficiali in formato csv e JSON (leggibili elettronicamente).&#13;
+&#13;
+A livello comunale i risultati, in particolare quelli delle forze partitiche e della partecipazione elettorale, saranno costantemente aggiornati per ogni Comune (in funzione dell’invio dei dati da parte dei Cantoni). I risultati dei candidati a livello comunale sono pubblicati per ogni cantone completato.&#13;
+&#13;
+[__Download TopoJSON__](https://dam-api.bfs.admin.ch/hub/api/dam/assets/26965404/master " Download TopoJSON "): Topo-JSON con le geometrie dei comuni (elezioni), i distretti, i cantoni, la Svizzera e i laghi più importanti. Nel caso di Comuni che condividono lo stesso seggio, al termine dello scrutinio si ha quindi un unico risultato.&#13;
+&#13;
+[__--&gt; Changelog__](https://bfspoku.github.io/wd-poku/Changelog_Eidgwahlen2023.html " Download Changelog ")&#13;
+&#13;
+__News-Page:__ Notizie e aggiornamenti sul dataset sono pubblicati nella seguente pagina informativa:&#13;
+https://bfspoku.github.io/wd-poku/Info.html&#13;
+&#13;
+Una descrizione dei file e delle modalità di utilizzo dell'API è disponibile alla seguente pagina Github:&#13;
+https://bfspoku.github.io/wd-poku/index.html&#13;
+&#13;
+__Testing:__ Per i test è disponibile un set di dati separato: https://ogdch-abnahme.clients.liip.ch/de/dataset/eidg-wahlen-2023&#13;
+&#13;
+__Importante:__ non utilizzare URL hardcoded per scaricare le risorse, ma l'API del portale.&#13;
+&#13;
+__Info:__ A metà agosto: dati provvisori sulle liste e le candidature nei cantoni in cui si vota secondo il sistema proporzionale.&#13;
+&#13;
+---</dct:description>
+    <dcat:keyword xml:lang="de">eidgenoessische-wahlen-2023</dcat:keyword>
+    <dcat:keyword xml:lang="de">wahlen</dcat:keyword>
+    <dct:title xml:lang="it">Elezioni federali 2023</dct:title>
+    <dcat:keyword xml:lang="fr">resultats-officiels</dcat:keyword>
+    <dcat:keyword xml:lang="it">elezioni</dcat:keyword>
+    <dcat:theme rdf:resource="http://dcat-ap.ch/vocabulary/themes/politics"/>
+    <dcat:keyword xml:lang="it">risultati-cantonali</dcat:keyword>
+    <dcat:keyword xml:lang="de">gemeinderesultate</dcat:keyword>
+    <dcat:keyword xml:lang="fr">elections-au-conseil-des-etats</dcat:keyword>
+    <dcat:keyword xml:lang="de">wahlen-2023</dcat:keyword>
+    <dcat:keyword xml:lang="de">offizielle-wahlresultate</dcat:keyword>
+    <dcat:keyword xml:lang="fr">elections-federales-2023</dcat:keyword>
+    <dcat:keyword xml:lang="it">elezioni-consiglio-degli-stati</dcat:keyword>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://ckan.opendata.swiss/dataset/02ff9cf6-702d-44fd-9539-0a1ac1582d4c/resource/1cd03e48-bb87-4d89-825b-84ccd32a0b83">
+        <dct:rights>NonCommercialAllowed-CommercialWithPermission-ReferenceRequired</dct:rights>
+        <dcat:downloadURL rdf:resource="https://ogd-static.voteinfo-app.ch/v4/ogd/sd-t-17.02-NRW2023-kandidierende.json"/>
+        <dct:title xml:lang="it">CN - Candidati</dct:title>
+        <dct:description xml:lang="fr">Elections au Conseil national 2023: candidats, suffrages obtenus et statut (élu/pas élu) (Cantons, communes)</dct:description>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-08T00:00:00</dct:issued>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-21T00:00:00</dct:modified>
+        <dcat:accessURL rdf:resource="https://ogd-static.voteinfo-app.ch/v4/ogd/sd-t-17.02-NRW2023-kandidierende.json"/>
+        <dct:description xml:lang="de">Nationalratswahlen 2023: Kandidierende, erhaltene Stimmen und Status (gewählt/nicht gewählt) (Kantone, Gemeinden)</dct:description>
+        <dct:title xml:lang="de">NR - Kandidierende</dct:title>
+        <dct:title xml:lang="fr">CN - Candidats</dct:title>
+        <dct:language>de</dct:language>
+        <dct:format>JSON</dct:format>
+        <dct:language>it</dct:language>
+        <dct:description xml:lang="it">Elezioni del Consiglio nazionale 2023: candidati, voti ottenuti e status (eletto/non eletto) (Cantoni, comuni)</dct:description>
+        <dct:language>fr</dct:language>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://ckan.opendata.swiss/dataset/02ff9cf6-702d-44fd-9539-0a1ac1582d4c/resource/edbc97e7-4897-4a27-9ad6-e4911314ae85">
+        <dct:language>de</dct:language>
+        <dct:description xml:lang="de">Ständeratswahlen 2023: Stand Wahlgang, Kandidierende, erhaltene Stimmen und Status (gewählt/nicht gewählt), nach Kantonen. Aktualisierungsintervall: pro abgeschlossenem Kanton.</dct:description>
+        <dct:description xml:lang="fr">Elections au Conseil des Etats 2023: Etat du scrutin, candidats, suffrages obtenus et statut (élu/pas élu), par canton. Intervalle d’actualisation: par canton terminé.</dct:description>
+        <dct:language>fr</dct:language>
+        <dct:rights>NonCommercialAllowed-CommercialAllowed-ReferenceNotRequired</dct:rights>
+        <dct:title xml:lang="it">CS - Candidati. 1. tornata elettorale</dct:title>
+        <dcat:downloadURL rdf:resource="https://ogd-static.voteinfo-app.ch/v4/ogd/sd-t-17.02-SRW2023-kandidierende_erster-wahlgang.json"/>
+        <dct:title xml:lang="de">SR - Kandidierende erster Wahlgang</dct:title>
+        <dct:description xml:lang="it">Elezioni del Consiglio degli Stati 2023: stato della tornata elettorale, candidati, voti ottenuti e status (eletto/non eletto), per Cantone. Intervallo di aggiornamento: per Cantone concluso.</dct:description>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-03T00:00:00</dct:modified>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-27T00:00:00</dct:issued>
+        <dct:format>JSON</dct:format>
+        <dct:language>it</dct:language>
+        <dcat:accessURL rdf:resource="https://ogd-static.voteinfo-app.ch/v4/ogd/sd-t-17.02-SRW2023-kandidierende_erster-wahlgang.json"/>
+        <dct:title xml:lang="fr">CE - Candidats 1er tour de scrutin</dct:title>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:keyword xml:lang="de">frauenanteil</dcat:keyword>
+    <dcat:keyword xml:lang="de">kandidierende</dcat:keyword>
+    <dcat:keyword xml:lang="de">listenstaerke</dcat:keyword>
+    <dct:relation>
+      <rdf:Description rdf:about="https://www.admin.ch/opc/de/classified-compilation/19920252/index.html#a20">
+        <rdfs:label>legal_basis</rdfs:label>
+      </rdf:Description>
+    </dct:relation>
+    <dcat:keyword xml:lang="it">consensi-elettorali</dcat:keyword>
+    <dcat:keyword xml:lang="de">nationalratswahlen</dcat:keyword>
+    <dcat:keyword xml:lang="it">voti</dcat:keyword>
+    <dcat:keyword xml:lang="it">liste-elettorali</dcat:keyword>
+    <dcat:keyword xml:lang="de">kantonsresultate</dcat:keyword>
+    <dcat:keyword xml:lang="it">ripartizione-seggi</dcat:keyword>
+    <dcat:keyword xml:lang="fr">apparentements-de-listes</dcat:keyword>
+    <dcat:keyword xml:lang="it">elezioni-federali-2023</dcat:keyword>
+    <dcat:keyword xml:lang="de">waehleranteile</dcat:keyword>
+    <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/GOVE"/>
+    <dct:title xml:lang="en">Federal elections 2023</dct:title>
+    <dcat:keyword xml:lang="it">elettori-fittizi</dcat:keyword>
+    <dcat:keyword xml:lang="de">kantonsergebnisse</dcat:keyword>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://ckan.opendata.swiss/dataset/02ff9cf6-702d-44fd-9539-0a1ac1582d4c/resource/fc2cdf27-6841-4df2-9914-24fe3584001e">
+        <dct:rights>NonCommercialAllowed-CommercialWithPermission-ReferenceRequired</dct:rights>
+        <dct:description xml:lang="it">Elezioni del Consiglio nazionale 2023: liste elettorali depositate, apparentamenti, voti ottenuti, forze delle liste elettorali e seggi (Cantoni).</dct:description>
+        <dct:title xml:lang="it">CN - Liste elettorali</dct:title>
+        <dct:format>JSON</dct:format>
+        <dct:description xml:lang="de">Nationalratswahlen 2023: eingereichte Wahllisten, Listenverbindungen, erhaltene Stimmen, Listenstärke und Mandate (Kantone).</dct:description>
+        <dct:language>it</dct:language>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-08T00:00:00</dct:issued>
+        <dct:language>de</dct:language>
+        <dct:language>fr</dct:language>
+        <dct:title xml:lang="fr">CN - Listes</dct:title>
+        <dcat:downloadURL rdf:resource="https://ogd-static.voteinfo-app.ch/v4/ogd/sd-t-17.02-NRW2023-listen.json"/>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-21T00:00:00</dct:modified>
+        <dct:title xml:lang="de">NR - Listen</dct:title>
+        <dct:description xml:lang="fr">Elections au Conseil national 2023: listes déposées, apparentements de listes, suffrages obtenus, force des listes, sièges (Cantons).</dct:description>
+        <dcat:accessURL rdf:resource="https://ogd-static.voteinfo-app.ch/v4/ogd/sd-t-17.02-NRW2023-listen.json"/>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:keyword xml:lang="fr">elections-au-conseil-national</dcat:keyword>
+    <dcat:keyword xml:lang="it">risultati-elettorali-ufficiali</dcat:keyword>
+    <dcat:keyword xml:lang="de">stimmen</dcat:keyword>
+    <dcat:keyword xml:lang="it">apparentamenti</dcat:keyword>
+    <dcat:keyword xml:lang="fr">electeurs-fictifs</dcat:keyword>
+    <dcat:keyword xml:lang="de">staenderatswahlen</dcat:keyword>
+    <dcat:landingPage rdf:resource="https://www.bfs.admin.ch/bfs/de/home/statistiken/politik/wahlen.html"/>
+    <dcat:keyword xml:lang="it">quota-donne</dcat:keyword>
+    <dcat:keyword xml:lang="de">offizielle-wahlergebnisse</dcat:keyword>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://ckan.opendata.swiss/dataset/02ff9cf6-702d-44fd-9539-0a1ac1582d4c/resource/7f6d0b7a-c174-4f00-8b46-ffe7a96e8728">
+        <dct:description xml:lang="fr">Elections au Conseil national: abréviations, dénomination des partis, apparentements de listes, etc.</dct:description>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-08-08T00:00:00</dct:issued>
+        <dct:language>en</dct:language>
+        <dcat:downloadURL rdf:resource="https://ogd-static.voteinfo-app.ch/v4/ogd/sd-t-17.02-NRW2023-metadaten.json"/>
+        <dct:format>JSON</dct:format>
+        <dct:description xml:lang="de">Nationalratswahlen: Abkürzungen, Parteibezeichnungen, Listenverbindungen, etc.</dct:description>
+        <dct:language>it</dct:language>
+        <dct:title xml:lang="de">NR - Metadaten</dct:title>
+        <dcat:accessURL rdf:resource="https://ogd-static.voteinfo-app.ch/v4/ogd/sd-t-17.02-NRW2023-metadaten.json"/>
+        <dct:title xml:lang="fr">CN - Métadonnées</dct:title>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-20T00:00:00</dct:modified>
+        <dct:language>fr</dct:language>
+        <dct:description xml:lang="it">Elezioni del Consiglio nazionale: sigle, nomi dei partiti, apparentamenti, ecc.</dct:description>
+        <dct:title xml:lang="it">CN - Metadati</dct:title>
+        <dct:rights>NonCommercialAllowed-CommercialWithPermission-ReferenceRequired</dct:rights>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:keyword xml:lang="fr">force-des-listes</dcat:keyword>
+    <dcat:keyword xml:lang="fr">nombre-de-suffrages</dcat:keyword>
+    <dcat:keyword xml:lang="it">sisultati-comunali</dcat:keyword>
+    <dct:description xml:lang="fr">Webservice pour les résultats des élections fédérales du 22 octobre 2023 (Conseil national et Conseil des États). Le dimanche des élections, l’Office fédéral de la statistique publiera en continu les résultats officiels provisoires, dans des fichiers JSON et csv lisibles par machine, via le portail openddata.swiss.&#13;
+&#13;
+Les résultats communaux, notamment la force des partis et la participation, seront mis à jour en continu au niveau des communes (sur la base des données livrées par les cantons). Les résultats des candidat-e-s au niveau communal sont mis en ligne dès que le canton concerné a été entièrement dépouillé.&#13;
+&#13;
+[__Download TopoJSON__](https://dam-api.bfs.admin.ch/hub/api/dam/assets/26965404/master " Download TopoJSON "): TopoJSON avec les géométries des communes (élections), des districts, des cantons, de la Suisse ainsi que des principaux lacs. Dans le cas des communes à urne commune, le dépouillement des bulletins de vote a lieu dans une commune voisine et il n'y a donc qu'un seul résultat pour les deux communes.&#13;
+&#13;
+[__--&gt; Changelog__](https://bfspoku.github.io/wd-poku/Changelog_Eidgwahlen2023.html " Download Changelog ")&#13;
+&#13;
+__News-Page:__ Les nouveautés et les mises à jour concernant le jeu de données sont publiées sur la page d'information suivante :&#13;
+https://bfspoku.github.io/wd-poku/Info.html&#13;
+&#13;
+Une description des fichiers ainsi que de l'utilisation de l'API se trouvent sur la page GitHub suivante:&#13;
+https://bfspoku.github.io/wd-poku/index.html&#13;
+&#13;
+__Testing:__ Un ensemble de données séparé est disponible pour des tests: https://ogdch-abnahme.clients.liip.ch/de/dataset/eidg-wahlen-2023&#13;
+&#13;
+__Important:__ pour le téléchargement des ressources, veuillez ne pas utiliser d'URL hardcodées mais l'API du portail.&#13;
+&#13;
+__Info:__ Dès mi-août : données provisoires sur les listes et les candidatures pour les cantons à scrutin proportionnel.&#13;
+&#13;
+---</dct:description>
+    <dct:description xml:lang="de">Webservice für die Ergebnisse der eidgenössischen Wahlen 2023 (National- und Ständeratswahlen). Am Wahlsonntag publiziert das Bundesamt für Statistik laufend die offiziellen provisorischen Ergebnisse als maschinenlesbare JSON- bzw. csv-Daten via das openddata.swiss-Portal.&#13;
+&#13;
+Die Gemeindeergebnisse, namentlich die Parteistärken und die Wahlbeteiligung, werden laufend gemeindeweise aktualisiert (abhängig von den Datenlieferungen durch die Kantone). Die Ergebnisse der Kandidierenden auf Gemeindeebene werden pro abgeschlossenem Kanton aufgeschaltet.&#13;
+&#13;
+[__Download TopoJSON__](https://dam-api.bfs.admin.ch/hub/api/dam/assets/26965404/master " Download TopoJSON "): Topo-JSON mit den Geometrien der Gemeinden (Wahlen), der Bezirke, der Kantone, der Schweiz sowie der wichtigsten Seen. Bei einer Gemeinde mit gemeinsamer Urne findet die Auszählung der Stimmzettel in einer benachbarten Gemeinde statt und es gibt folglich nur ein gemeinsames Resultat für die beiden Gemeinden.&#13;
+&#13;
+[__--&gt; Changelog__](https://bfspoku.github.io/wd-poku/Changelog_Eidgwahlen2023.html " Download Changelog ")&#13;
+&#13;
+__News-Page:__ Neuigkeiten und Updates zum Datensatz werden auf folgender Info-Seite publiziert:&#13;
+https://bfspoku.github.io/wd-poku/Info.html&#13;
+&#13;
+Ein Beschrieb zu den Dateien sowie zur Verwendung der API findet sich auf folgender Github-Seite:&#13;
+https://bfspoku.github.io/wd-poku/index.html&#13;
+&#13;
+__Testing:__ Für Tests steht ein separater Testdatensatz zur Verfügung: https://ogdch-abnahme.clients.liip.ch/de/dataset/eidg-wahlen-2023&#13;
+&#13;
+__Wichtig:__ Verwenden Sie bitte zum Download der Ressourcen keine hardcodierten URLs sondern die API des Portals.&#13;
+&#13;
+__Info:__ Ab Mitte August: Provisorische Daten zu den Listen und Kandidaturen in den Proporzkantonen.&#13;
+&#13;
+---</dct:description>
+    <dcat:keyword xml:lang="fr">mandats</dcat:keyword>
+    <dcat:keyword xml:lang="de">wahlbeteiligung</dcat:keyword>
+    <dcat:keyword xml:lang="fr">repartition-des-mandats</dcat:keyword>
+    <dct:identifier>eidgenoessische-wahlen-2023@bundesamt-fur-statistik-bfs</dct:identifier>
+    <dcat:keyword xml:lang="it">mandati</dcat:keyword>
+  </dcat:Dataset>
+</rdf:RDF>
